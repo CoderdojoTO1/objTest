@@ -24,12 +24,21 @@
               <block type="oled_drawtext" id="103">
                 <field name="TEXT">leftfront=</field>
                 <next>
-                  <block type="robot_delay" id="147" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="149">
-                        <field name="NUM">200</field>
+                  <block type="oled_drawnumber" id="198" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_object" id="224">
+                        <field name="OBJECT">LEFTFRONT</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="robot_delay" id="147" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="149">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
